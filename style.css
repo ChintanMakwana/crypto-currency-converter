@@ -1,0 +1,117 @@
+.cctw tbody th {
+vertical-align: middle;
+}
+
+.cctw tbody th .currency {
+display: inline-block;
+position: relative;
+border: 0;
+}
+
+.cctw tbody th .currency.ico {
+background-size: 20px;
+background-repeat: no-repeat;
+background-position: center left;
+padding-left: 25px;
+min-height: 20px;
+}
+
+.cctw tbody th a {
+border: 0;
+box-shadow: none;
+}
+
+.cctw tbody td {
+text-align: right;
+vertical-align: middle;
+font-size: 1rem;
+}
+
+.cctw tbody td .amount {
+clear: both;
+}
+
+.cctw tbody td .price {
+font-size: 2rem;  
+}
+
+.cctw tbody td .amount.up {
+color: #60C27B;
+}
+
+.cctw tbody td .amount.down {
+color: #A11B0A;
+}
+
+.cctw tbody td .amount.unchanged {
+color: #2D4F79;
+}
+
+.cctw tbody td .amount .change {
+clear: both;
+font-size: 1rem;
+display: block;
+opacity: 0.8;
+}
+
+.cctw tfoot tr td {
+font-size: 1rem;
+text-align: center;
+vertical-align: middle;
+}
+
+.cctw tfoot tr td span.delay {
+float: right;
+margin-left: 1rem;
+}
+
+.cctw tfoot tr td span.coinbase {
+float: left;
+margin-right: 1rem;
+}
+
+
+
+@media screen and (max-width: 750px) {
+.cctw tfoot tr td {
+text-align: right;
+}
+.cctw tfoot tr td span {
+float: none !important;
+margin: 0 !important;
+display: block;
+}
+}
+
+@-webkit-keyframes spin {
+0% {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+@keyframes spin {
+0% {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+div.spinner_loader {
+display: none;
+border-radius: 50%;
+width: 50px !important;
+height: 50px;
+border: .25rem solid rgba(205, 38, 83, 0.2);
+border-top-color: rgb(205, 38, 83);
+-webkit-animation: spin 1s infinite linear;
+animation: spin 1s infinite linear;
+}
